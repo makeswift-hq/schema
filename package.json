@@ -41,6 +41,7 @@
     "link-examples": "yarn && yarn gulp link-examples",
     "lint": "tslint -p tsconfig.json",
     "prepublish": "yarn clean && yarn build",
+    "prepack": "yarn clean && yarn build",
     "postpublish": "yarn upgrade-deps || echo 'Oops...'",
     "release:pr": "dripip pr",
     "release:preview": "dripip preview",
