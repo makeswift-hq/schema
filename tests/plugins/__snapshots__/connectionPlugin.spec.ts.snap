@@ -301,7 +301,7 @@ type User {
 `;
 
 exports[`field level configuration can configure the connection per-instance 1`] = `
-"type QueryUsers_Connection {
+"type QueryUsersConnection {
   \\"\\"\\"
   https://facebook.github.io/relay/graphql/connections.htm#sec-Edge-Types
   \\"\\"\\"
@@ -316,11 +316,11 @@ exports[`field level configuration can configure the connection per-instance 1`]
 `;
 
 exports[`field level configuration can configure the edge per-instance 1`] = `
-"type QueryUsers_Connection {
+"type QueryUsersConnection {
   \\"\\"\\"
   https://facebook.github.io/relay/graphql/connections.htm#sec-Edge-Types
   \\"\\"\\"
-  edges: [QueryUsers_Edge]
+  edges: [QueryUsersEdge]
 
   \\"\\"\\"
   https://facebook.github.io/relay/graphql/connections.htm#sec-undefined.PageInfo
@@ -330,7 +330,7 @@ exports[`field level configuration can configure the edge per-instance 1`] = `
 `;
 
 exports[`field level configuration can configure the edge per-instance 2`] = `
-"type QueryUsers_Edge {
+"type QueryUsersEdge {
   \\"\\"\\"https://facebook.github.io/relay/graphql/connections.htm#sec-Cursor\\"\\"\\"
   cursor: String!
 

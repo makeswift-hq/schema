@@ -887,7 +887,7 @@ const getTypeNames = (
   // edge, or page info, then we need a custom type for the connection & edge.
   let connectionName: string
   if (isConnectionFieldExtended(fieldConfig)) {
-    connectionName = `${parentTypeName}${upperFirst(fieldName)}_Connection`
+    connectionName = `${parentTypeName}${upperFirst(fieldName)}Connection`
   } else {
     connectionName = `${pluginConfig.typePrefix || ''}${targetTypeName}Connection`
   }
@@ -895,7 +895,7 @@ const getTypeNames = (
   // If we have modified the "edge" at all, then we need
   let edgeName
   if (isEdgeFieldExtended(fieldConfig)) {
-    edgeName = `${parentTypeName}${upperFirst(fieldName)}_Edge`
+    edgeName = `${parentTypeName}${upperFirst(fieldName)}Edge`
   } else {
     edgeName = `${pluginConfig.typePrefix || ''}${targetTypeName}Edge`
   }

@@ -696,8 +696,8 @@ describe('field level configuration', () => {
         },
       }
     )
-    expect(printType(schema.getType('QueryUsers_Connection')!)).toMatchSnapshot()
-    expect(schema.getType('QueryUsers_Edge')).toBeUndefined()
+    expect(printType(schema.getType('QueryUsersConnection')!)).toMatchSnapshot()
+    expect(schema.getType('QueryUsersEdge')).toBeUndefined()
   })
 
   it('can configure the edge per-instance', () => {
@@ -709,8 +709,8 @@ describe('field level configuration', () => {
         },
       }
     )
-    expect(printType(schema.getType('QueryUsers_Connection')!)).toMatchSnapshot()
-    expect(printType(schema.getType('QueryUsers_Edge')!)).toMatchSnapshot()
+    expect(printType(schema.getType('QueryUsersConnection')!)).toMatchSnapshot()
+    expect(printType(schema.getType('QueryUsersEdge')!)).toMatchSnapshot()
   })
 
   it('can modify the behavior of cursorFromNode ', () => {})
