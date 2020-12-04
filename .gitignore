@@ -1,6 +1,4 @@
 node_modules
-dist/*
-dist-esm/*
 examples/*/dist
 website/static/playground-dist
 yarn-error.log
